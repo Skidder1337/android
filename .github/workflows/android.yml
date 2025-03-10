@@ -6,8 +6,6 @@ on:
 
 jobs:
   build:
-    if: ${{ false }} # at the moment this simply wastes our minutes, we will enable it when we have unit tests etc.
-
     runs-on: ubuntu-latest
 
     env:
@@ -45,4 +43,3 @@ jobs:
           retention-days: 5
           path: |
             app/build/outputs/apk/debug/app-debug.apk
-            
